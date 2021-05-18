@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+    <script
+      src="https://kit.fontawesome.com/d806d9b80f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="body">
+    <section class="page">
+      <section class="container">
+        <div class="container__header container__header--1">
+          <div class="data">
+            <p class="data--1">Social Media Dashboard</p>
+            <p class="data--2">Total Followers: 23,004</p>
+          </div>
+
+          <div class="switch-container">
+            <p class="label">Dark Mode</p>
+            <label for="checkbox" class="switch">
+              <span class="slider"></span>
+            </label>
+            <input class="checkbox" id="checkbox" type="checkbox" checked />
+          </div>
+        </div>
+
+        <div class="container__main">
+          <div class="card card__big card__big--1">
+            <div class="header">
+              <i
+                class="fab fa-facebook-square header__icon header__icon--1"
+              ></i>
+              <p class="header__id">@nathanf</p>
+            </div>
+            <p class="number">1987</p>
+            <p class="text">Followers</p>
+            <p class="text-today text-today--pos">
+              <span class="triangle triangle-up"></span>12 Today
+            </p>
+          </div>
+          <div class="card card__big card__big--2">
+            <div class="header">
+              <i class="fab fa-twitter header__icon header__icon--2"></i>
+              <p class="header__id">@nathanf</p>
+            </div>
+            <p class="number">1044</p>
+            <p class="text">Followers</p>
+            <p class="text-today text-today--pos">
+              <span class="triangle triangle-up"></span>99 Today
+            </p>
+          </div>
+          <div class="card card__big card__big--3">
+            <div class="header">
+              <i class="fab fa-instagram header__icon header__icon--3"></i>
+              <p class="header__id">@realnathanf</p>
+            </div>
+            <p class="number">11k</p>
+            <p class="text">Followers</p>
+            <p class="text-today text-today--pos">
+              <span class="triangle triangle-up"></span>1099 Today
+            </p>
+          </div>
+          <div class="card card__big card__big--4">
+            <div class="header">
+              <i class="fab fa-youtube header__icon header__icon--4"></i>
+              <p class="header__id">Nathan F.</p>
+            </div>
+            <p class="number">8239</p>
+            <p class="text">Subscribers</p>
+            <p class="text-today text-today--neg">
+              <span class="triangle triangle-down"></span>144 Today
+            </p>
+          </div>
+        </div>
+
+        <div class="container__header container__header--2">
+          Overview - Today
+        </div>
+
+        <div class="container__sub">
+          <div class="card card__small card__small--1">
+            <p class="item--left text">Page Views</p>
+            <i
+              class="
+                fab
+                fa-facebook-square
+                item--right
+                social-icon social-icon--fb
+              "
+            ></i>
+
+            <p class="item--left number">87</p>
+            <p class="item--right percentage percentage--pos">
+              <span class="triangle triangle-up"></span>3%
+            </p>
+          </div>
+          <div class="card card__small card__small--2">
+            <p class="item--left text">Likes</p>
+            <i
+              class="
+                fab
+                fa-facebook-square
+                item--right
+                social-icon social-icon--fb
+              "
+            ></i>
+            <p class="item--left number">52</p>
+            <p class="item--right percentage percentage--neg">
+              <span class="triangle triangle-down"></span>2%
+            </p>
+          </div>
+          <div class="card card__small card__small--3">
+            <p class="item--left text">Likes</p>
+            <i
+              class="fab fa-instagram item--right social-icon social-icon--ig"
+            ></i>
+
+            <p class="item--left number">5462</p>
+            <p class="item--right percentage percentage--pos">
+              <span class="triangle triangle-up"></span>2257%
+            </p>
+          </div>
+          <div class="card card__small card__small--4">
+            <p class="item--left text">Profile Views</p>
+            <i
+              class="fab fa-instagram item--right social-icon social-icon--ig"
+            ></i>
+            <p class="item--left number">52k</p>
+            <p class="item--right percentage percentage--pos">
+              <span class="triangle triangle-up"></span>1375%
+            </p>
+          </div>
+          <div class="card card__small card__small--5">
+            <p class="item--left text">Retweets</p>
+            <i
+              class="fab fa-twitter item--right social-icon social-icon--tw"
+            ></i>
+            <p class="item--left number">117</p>
+            <p class="item--right percentage percentage--pos">
+              <span class="triangle triangle-up"></span>303%
+            </p>
+          </div>
+          <div class="card card__small card__small--6">
+            <p class="item--left text">Likes</p>
+            <i
+              class="fab fa-twitter item--right social-icon social-icon--tw"
+            ></i>
+            <p class="item--left number">507</p>
+            <p class="item--right percentage percentage--pos">
+              <span class="triangle triangle-up"></span>553%
+            </p>
+          </div>
+          <div class="card card__small card__small--7">
+            <p class="item--left text">Likes</p>
+            <i
+              class="fab fa-youtube item--right social-icon social-icon--yt"
+            ></i>
+            <p class="item--left number">107</p>
+            <p class="item--right percentage percentage--neg">
+              <span class="triangle triangle-down"></span>19%
+            </p>
+          </div>
+          <div class="card card__small card__small--8">
+            <p class="item--left text">Total views</p>
+            <i
+              class="fab fa-youtube item--right social-icon social-icon--yt"
+            ></i>
+            <p class="item--left number">1407</p>
+            <p class="item--right percentage percentage--neg">
+              <span class="triangle triangle-down"></span>12%
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">AzureArmatt</a>.
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
