@@ -16,7 +16,10 @@ switchSelector.addEventListener("click", function (e) {
       (el) => (el.style.backgroundColor = "hsl(227, 47%, 96%)")
     );
     sliderSelector.style.backgroundColor = "hsl(0, 0%, 100%)";
-    //switchSelector.style.backgroundColor = "hsl(228, 12%, 44%)";
+    //
+    switchSelector.style.backgroundImage = "none";
+    switchSelector.style.backgroundColor = "hsl(228, 12%, 44%)";
+    //
     labelSelector.style.color = "hsl(228, 12%, 44%)";
     return;
   }
@@ -29,8 +32,11 @@ switchSelector.addEventListener("click", function (e) {
     (el) => (el.style.backgroundColor = "hsl(228, 28%, 20%)")
   );
   sliderSelector.style.backgroundColor = "hsl(228, 28%, 20%)";
-  //   switchSelector.backgroundImage =
-  //     "linear-gradient(to bottom,hsl(225, 100%, 98%) 30%,hsl(0, 0%, 100%) 30%)";
+  //
+  switchSelector.style.backgroundImage =
+    "linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))";
+  switchSelector.style.backgroundColor = "none";
+  //
   labelSelector.style.color = "hsl(0, 0%, 100%)";
 });
 
@@ -52,4 +58,19 @@ cardSelector.forEach((el) => {
     }
     el.style.backgroundColor = "hsl(227, 47%, 96%)";
   });
+});
+
+switchSelector.addEventListener("mouseover", function (e) {
+  if (checkboxSelector.checked == false) {
+    switchSelector.style.backgroundImage =
+      "linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))";
+    switchSelector.style.backgroundColor = "none";
+  }
+});
+
+switchSelector.addEventListener("mouseout", function (e) {
+  if (checkboxSelector.checked == false) {
+    switchSelector.style.backgroundImage = "none";
+    switchSelector.style.backgroundColor = "hsl(228, 12%, 44%)";
+  }
 });
